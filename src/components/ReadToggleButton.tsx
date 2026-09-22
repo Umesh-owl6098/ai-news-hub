@@ -10,6 +10,10 @@ interface ReadToggleButtonProps {
   /** Icon-only, no label text inline — for dense list contexts. Same
    * optimistic toggle logic either way; only the rendering differs. */
   compact?: boolean;
+  /** Optional: fires only after a persisted (not optimistic) read-state
+   * change — for a caller keeping its own derived view in sync, e.g.
+   * /queue's row list and counts. See useOptimisticToggle's onSuccess. */
+  onSuccess?: (read: boolean) => void;
 }
 
 /**
@@ -19,13 +23,17 @@ interface ReadToggleButtonProps {
  * (Step 26 §3). Restrained presentation per §12/§5 — a read item stays
  * fully legible, never faded to near-illegibility.
  */
-export function ReadToggleButton({ sourceKey, initialRead, compact = false }: ReadToggleButtonProps) {
+export function ReadToggleButton({ sourceKey, initialRead, compact = false, onSuccess }: ReadToggleButtonProps) {
   const {
     value: read,
     pending,
     error,
     toggle,
-  } = useOptimisticToggle(initialRead, (next) => (next ? markReadAction(sourceKey) : markUnreadAction(sourceKey)));
+  } = useOptimisticToggle(
+    initialRead,
+    (next) => (next ? markReadAction(sourceKey) : markUnreadAction(sourceKey)),
+    onSuccess
+  );
 
   const handleClick = () => {
     void toggle("Couldn't update read state. Try again.");

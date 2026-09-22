@@ -10,6 +10,10 @@ interface QueueButtonProps {
   /** Icon-only, no label text inline — for dense list contexts. Same
    * optimistic toggle logic either way; only the rendering differs. */
   compact?: boolean;
+  /** Optional: fires only after a persisted (not optimistic) queue
+   * change — for a caller keeping its own derived view in sync, e.g.
+   * /queue's row list and counts. See useOptimisticToggle's onSuccess. */
+  onSuccess?: (queued: boolean) => void;
 }
 
 /**
@@ -17,14 +21,16 @@ interface QueueButtonProps {
  * failure pattern as BookmarkButton (via the shared useOptimisticToggle
  * hook), independent of bookmark and read state (Step 26 §3).
  */
-export function QueueButton({ sourceKey, initialQueued, compact = false }: QueueButtonProps) {
+export function QueueButton({ sourceKey, initialQueued, compact = false, onSuccess }: QueueButtonProps) {
   const {
     value: queued,
     pending,
     error,
     toggle,
-  } = useOptimisticToggle(initialQueued, (next) =>
-    next ? addToQueueAction(sourceKey) : removeFromQueueAction(sourceKey)
+  } = useOptimisticToggle(
+    initialQueued,
+    (next) => (next ? addToQueueAction(sourceKey) : removeFromQueueAction(sourceKey)),
+    onSuccess
   );
 
   const handleClick = () => {

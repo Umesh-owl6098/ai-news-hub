@@ -31,8 +31,18 @@ export interface ToggleActionResult {
  * fixes this without weakening the optimistic-update path for a direct
  * click, which still updates `value` immediately, before any prop change
  * could possibly arrive.
+ *
+ * `onSuccess` is an optional hook for a caller that keeps its own derived
+ * view of several toggles at once (e.g. /queue's row list and counts) —
+ * it fires only after `action` reports `ok: true`, never on a failed
+ * mutation, so a caller using it to add/remove/reclassify an item in a
+ * local list can never do so for a change that didn't actually persist.
  */
-export function useOptimisticToggle(initialValue: boolean, action: (next: boolean) => Promise<ToggleActionResult>) {
+export function useOptimisticToggle(
+  initialValue: boolean,
+  action: (next: boolean) => Promise<ToggleActionResult>,
+  onSuccess?: (next: boolean) => void
+) {
   const [value, setValue] = useState(initialValue);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -56,6 +66,8 @@ export function useOptimisticToggle(initialValue: boolean, action: (next: boolea
     if (!result.ok) {
       setValue(!next);
       setError(result.error ?? fallbackError);
+    } else {
+      onSuccess?.(next);
     }
     setPending(false);
   };

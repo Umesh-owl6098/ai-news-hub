@@ -2,12 +2,9 @@ import Link from "next/link";
 import { Sparkles } from "lucide-react";
 import { getQueueItems } from "@/db/repository";
 import { BackButton } from "@/components/BackButton";
-import { QueueRow } from "@/components/QueueRow";
+import { QueueList, type QueueStatus } from "@/components/QueueList";
 
-const STATUS_VALUES = ["all", "unread", "read"] as const;
-type QueueStatus = (typeof STATUS_VALUES)[number];
-
-const STATUS_LABELS: Record<QueueStatus, string> = { all: "All", unread: "Unread", read: "Read" };
+const STATUS_VALUES: readonly QueueStatus[] = ["all", "unread", "read"];
 const DEFAULT_STATUS: QueueStatus = "all";
 
 function isQueueStatus(value: string): value is QueueStatus {
@@ -23,10 +20,11 @@ function parseStatus(raw: string | string[] | undefined): QueueStatus {
  * Step 26 — the reading queue: a practical, compact reading list, not
  * another dashboard. Database reads only (`getQueueItems`, one bounded
  * joined query — no per-row lookups): no OpenAI call, no embedding call,
- * no source-network call, and — critically — no mutation. Viewing this
- * page, or switching the All/Unread/Read filter, never changes queue,
- * read, or bookmark state; every state change here comes from an explicit
- * click on a row's own control (QueueRow's buttons).
+ * no source-network call, and — critically — no mutation from viewing
+ * this page or switching the All/Unread/Read filter. Every state change
+ * comes from an explicit click on a row's own control; `QueueList` (a
+ * client component) keeps the filtered rows and counts in sync with
+ * those *persisted* changes without a reload (see its own doc comment).
  *
  * Ordering is the user's own explicit queue action (most-recently-queued
  * first, via `queuedAt` — see repository.ts), never editorial ranking.
@@ -36,15 +34,6 @@ export default async function QueuePage({ searchParams }: PageProps<"/queue">) {
   const status = parseStatus(params.status);
 
   const queueItems = await getQueueItems();
-
-  const filteredItems = queueItems.filter((row) => {
-    if (status === "unread") return !row.read;
-    if (status === "read") return row.read;
-    return true;
-  });
-
-  const unreadCount = queueItems.filter((row) => !row.read).length;
-  const readCount = queueItems.length - unreadCount;
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -72,38 +61,7 @@ export default async function QueuePage({ searchParams }: PageProps<"/queue">) {
           Items you&apos;ve set aside to read later, most recently queued first.
         </p>
 
-        <nav aria-label="Read status" className="mt-4 flex items-center gap-1 rounded-lg border border-slate-200 bg-white p-1 text-sm w-fit">
-          {STATUS_VALUES.map((s) => (
-            <Link
-              key={s}
-              href={s === DEFAULT_STATUS ? "/queue" : `/queue?status=${s}`}
-              aria-current={s === status ? "page" : undefined}
-              className={`rounded-md px-3 py-1.5 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 ${
-                s === status ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-100"
-              }`}
-            >
-              {STATUS_LABELS[s]}
-              {s === "unread" && unreadCount > 0 ? ` (${unreadCount})` : ""}
-              {s === "read" && readCount > 0 ? ` (${readCount})` : ""}
-            </Link>
-          ))}
-        </nav>
-
-        {queueItems.length === 0 ? (
-          <p className="mt-6 rounded-xl border border-dashed border-slate-300 bg-white p-8 text-center text-sm text-slate-500">
-            Your reading queue is empty — use the clock icon on any item to save it here for later.
-          </p>
-        ) : filteredItems.length === 0 ? (
-          <p className="mt-6 rounded-xl border border-dashed border-slate-300 bg-white p-8 text-center text-sm text-slate-500">
-            No {STATUS_LABELS[status].toLowerCase()} items in your queue.
-          </p>
-        ) : (
-          <ul className="mt-6 flex flex-col divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white px-1 shadow-sm">
-            {filteredItems.map((row) => (
-              <QueueRow key={row.item.id} item={row.item} read={row.read} bookmarked={row.bookmarked} />
-            ))}
-          </ul>
-        )}
+        <QueueList items={queueItems} status={status} />
       </main>
     </div>
   );
