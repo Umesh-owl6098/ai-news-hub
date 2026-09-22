@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "decoded": {
+    "1": {
+      "query": "GitHub Copilot",
+      "category": "exact",
+      "filters": {},
+      "methods": {
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lexical": []
+      }
+    },
+    "2": {
+      "query": "retrieval augmented generation",
+      "category": "exact",
+      "filters": {},
+      "methods": {
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lexical": [
+          2
+        ],
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "3": {
+      "query": "pgvector",
+      "category": "exact",
+      "filters": {},
+      "methods": {
+        "lexical": [],
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "4": {
+      "query": "AutoGPT",
+      "category": "exact",
+      "filters": {},
+      "methods": {
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lexical": [
+          2
+        ]
+      }
+    },
+    "5": {
+      "query": "LangChain",
+      "category": "exact",
+      "filters": {},
+      "methods": {
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lexical": [
+          2
+        ],
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "6": {
+      "query": "efficient training of small language models",
+      "category": "conceptual",
+      "filters": {},
+      "methods": {
+        "lexical": [],
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "7": {
+      "query": "AI systems that use tools autonomously",
+      "category": "conceptual",
+      "filters": {},
+      "methods": {
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lexical": []
+      }
+    },
+    "8": {
+      "query": "safety research about deceptive behavior in AI",
+      "category": "conceptual",
+      "filters": {},
+      "methods": {
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lexical": [],
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "9": {
+      "query": "techniques for grounding LLM answers in external information",
+      "category": "conceptual",
+      "filters": {},
+      "methods": {
+        "lexical": [],
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "10": {
+      "query": "reducing hallucinations in large language models",
+      "category": "conceptual",
+      "filters": {},
+      "methods": {
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lexical": []
+      }
+    },
+    "11": {
+      "query": "make chatbots cite their sources",
+      "category": "cross_vocabulary",
+      "filters": {},
+      "methods": {
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lexical": [],
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "12": {
+      "query": "AI that can browse the web and click buttons",
+      "category": "cross_vocabulary",
+      "filters": {},
+      "methods": {
+        "lexical": [],
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "13": {
+      "query": "shrinking neural networks without losing accuracy",
+      "category": "cross_vocabulary",
+      "filters": {},
+      "methods": {
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lexical": []
+      }
+    },
+    "14": {
+      "query": "teaching computers to write code that fixes itself",
+      "category": "cross_vocabulary",
+      "filters": {},
+      "methods": {
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lexical": [],
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "15": {
+      "query": "new model release",
+      "category": "filtered",
+      "filters": {
+        "sourceType": "hackernews"
+      },
+      "methods": {
+        "lexical": [],
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "16": {
+      "query": "open source",
+      "category": "filtered",
+      "filters": {
+        "sourceType": "github"
+      },
+      "methods": {
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lexical": [
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "17": {
+      "query": "language model",
+      "category": "filtered",
+      "filters": {
+        "sinceDays": 7
+      },
+      "methods": {
+        "hybrid": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lexical": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "semantic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "18": {
+      "query": "reasoning",
+      "category": "filtered",
+      "filters": {
+        "bookmarkedOnly": true
+      },
+      "methods": {
+        "lexical": [],
+        "semantic": [],
+        "hybrid": []
+      }
+    }
+  }
+}

@@ -3,24 +3,49 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/assert-project-root.mjs",
+    "predev:no-ai": "node scripts/assert-project-root.mjs",
     "dev": "next dev",
+    "dev:no-ai": "AI_EGRESS_DISABLED=1 next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "test": "vitest run",
+    "ai:enrich": "tsx --tsconfig tsconfig.scripts.json scripts/ai-enrich.ts",
+    "ai:status": "tsx --tsconfig tsconfig.scripts.json scripts/ai-status.ts",
+    "ai:evaluate": "tsx --tsconfig tsconfig.scripts.json scripts/ai-evaluate.ts",
+    "ai:compare": "tsx --tsconfig tsconfig.scripts.json scripts/ai-compare-models.ts",
+    "ai:augment": "tsx --tsconfig tsconfig.scripts.json scripts/ai-augment-experiment.ts",
+    "ai:embed": "tsx --tsconfig tsconfig.scripts.json scripts/ai-embed.ts",
+    "ai:retrieval-eval": "tsx --tsconfig tsconfig.scripts.json scripts/ai-retrieval-eval.ts",
+    "ai:retrieval-eval-17c": "tsx --tsconfig tsconfig.scripts.json scripts/ai-retrieval-eval-17c.ts",
+    "ai:briefing-evaluate": "tsx --tsconfig tsconfig.scripts.json scripts/ai-briefing-evaluate.ts",
+    "sources:refresh": "tsx --tsconfig tsconfig.scripts.json scripts/refresh-sources.ts"
   },
   "dependencies": {
+    "drizzle-orm": "^0.45.2",
+    "fast-xml-parser": "^5.11.1",
+    "lucide-react": "^1.43.0",
     "next": "16.3.4",
+    "postgres": "^3.4.9",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1",
+    "zod": "^4.6.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.10",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "tsx": "^4.23.13",
+    "typescript": "^5",
+    "vitest": "^3.2.7"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ai-news-hub-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "-p", "3100"],
+      "port": 3100
+    },
+    {
+      "name": "ai-news-hub-dev-no-ai",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev:no-ai", "--", "-p", "3105"],
+      "port": 3105
+    },
+    {
+      "name": "ai-news-hub-prod",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start", "--", "-p", "3102"],
+      "port": 3102
+    }
+  ]
+}

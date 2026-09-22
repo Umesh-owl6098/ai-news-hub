@@ -1,0 +1,1155 @@
+{
+  "generatedAt": "2026-09-11T02:14:25.721Z",
+  "queries": [
+    {
+      "id": 1,
+      "category": "exact",
+      "query": "GitHub Copilot",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "anthropics/claude-code",
+            "sourceKey": "github:937253475",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "farion1231/cc-switch",
+            "sourceKey": "github:1031912724",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "mattpocock/skills",
+            "sourceKey": "github:1148788086",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "langgenius/dify",
+            "sourceKey": "github:626805178",
+            "sourceName": "GitHub"
+          }
+        ],
+        "B": [
+          {
+            "title": "anthropics/claude-code",
+            "sourceKey": "github:937253475",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "farion1231/cc-switch",
+            "sourceKey": "github:1031912724",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "mattpocock/skills",
+            "sourceKey": "github:1148788086",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "langgenius/dify",
+            "sourceKey": "github:626805178",
+            "sourceName": "GitHub"
+          }
+        ],
+        "C": []
+      }
+    },
+    {
+      "id": 2,
+      "category": "exact",
+      "query": "retrieval augmented generation",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+            "sourceKey": "arxiv:2609.11569",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "microsoft/generative-ai-for-beginners",
+            "sourceKey": "github:655806940",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
+            "sourceKey": "rss:google-research:https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "affaan-m/ECC",
+            "sourceKey": "github:1136590548",
+            "sourceName": "GitHub"
+          }
+        ],
+        "B": [
+          {
+            "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+            "sourceKey": "arxiv:2609.11569",
+            "sourceName": "arXiv"
+          }
+        ],
+        "C": [
+          {
+            "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+            "sourceKey": "arxiv:2609.11569",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "microsoft/generative-ai-for-beginners",
+            "sourceKey": "github:655806940",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
+            "sourceKey": "rss:google-research:https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "affaan-m/ECC",
+            "sourceKey": "github:1136590548",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "category": "exact",
+      "query": "pgvector",
+      "filters": {},
+      "results": {
+        "A": [],
+        "B": [
+          {
+            "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+            "sourceKey": "arxiv:2609.11616",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+            "sourceKey": "arxiv:2609.11638",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "ggml-org/llama.cpp",
+            "sourceKey": "github:612354784",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Learn the Solid, Not the File: Canonical Inputs for Neural Networks on CAD Boundary Representations",
+            "sourceKey": "arxiv:2609.11573",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Particle GFlowNets: Rethinking Generative Marginalization Models",
+            "sourceKey": "arxiv:2609.11538",
+            "sourceName": "arXiv"
+          }
+        ],
+        "C": [
+          {
+            "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+            "sourceKey": "arxiv:2609.11616",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+            "sourceKey": "arxiv:2609.11638",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "ggml-org/llama.cpp",
+            "sourceKey": "github:612354784",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Learn the Solid, Not the File: Canonical Inputs for Neural Networks on CAD Boundary Representations",
+            "sourceKey": "arxiv:2609.11573",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Particle GFlowNets: Rethinking Generative Marginalization Models",
+            "sourceKey": "arxiv:2609.11538",
+            "sourceName": "arXiv"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "category": "exact",
+      "query": "AutoGPT",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "GPT-6 Astra: The next generation in intelligence for work",
+            "sourceKey": "rss:openai:https://openai.com/index/gpt-6-astra-next-generation-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+            "sourceKey": "rss:openai:https://openai.com/index/codex-quantum-computing-experiments",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Introducing ChatGPT for Financial Services",
+            "sourceKey": "rss:openai:https://openai.com/index/introducing-chatgpt-financial-services",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+            "sourceName": "Google DeepMind"
+          }
+        ],
+        "B": [
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "GPT-6 Astra: The next generation in intelligence for work",
+            "sourceKey": "rss:openai:https://openai.com/index/gpt-6-astra-next-generation-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+            "sourceKey": "rss:openai:https://openai.com/index/codex-quantum-computing-experiments",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Introducing ChatGPT for Financial Services",
+            "sourceKey": "rss:openai:https://openai.com/index/introducing-chatgpt-financial-services",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+            "sourceName": "Google DeepMind"
+          }
+        ],
+        "C": [
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "category": "exact",
+      "query": "LangChain",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "langchain-ai/langchain",
+            "sourceKey": "github:552661142",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "A Training-Free, Alignment-Free Approach to Corporate Intelligence: Application to SEC Filings",
+            "sourceKey": "arxiv:2609.11620",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "langgenius/dify",
+            "sourceKey": "github:626805178",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+            "sourceKey": "arxiv:2609.11616",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "langflow-ai/langflow",
+            "sourceKey": "github:599320067",
+            "sourceName": "GitHub"
+          }
+        ],
+        "B": [
+          {
+            "title": "langchain-ai/langchain",
+            "sourceKey": "github:552661142",
+            "sourceName": "GitHub"
+          }
+        ],
+        "C": [
+          {
+            "title": "langchain-ai/langchain",
+            "sourceKey": "github:552661142",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "A Training-Free, Alignment-Free Approach to Corporate Intelligence: Application to SEC Filings",
+            "sourceKey": "arxiv:2609.11620",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "langgenius/dify",
+            "sourceKey": "github:626805178",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+            "sourceKey": "arxiv:2609.11616",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "langflow-ai/langflow",
+            "sourceKey": "github:599320067",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "category": "conceptual",
+      "query": "efficient training of small language models",
+      "filters": {},
+      "results": {
+        "A": [],
+        "B": [
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Characterizing Job Power Elasticity for Power-Flexible AI Training",
+            "sourceKey": "arxiv:2609.11542",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
+            "sourceKey": "rss:google-research:https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+            "sourceKey": "arxiv:2609.11616",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "How mobility gives language models a deeper understanding of place",
+            "sourceKey": "rss:google-research:https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+            "sourceName": "Google Research"
+          }
+        ],
+        "C": [
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Characterizing Job Power Elasticity for Power-Flexible AI Training",
+            "sourceKey": "arxiv:2609.11542",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
+            "sourceKey": "rss:google-research:https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+            "sourceKey": "arxiv:2609.11616",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "How mobility gives language models a deeper understanding of place",
+            "sourceKey": "rss:google-research:https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+            "sourceName": "Google Research"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "category": "conceptual",
+      "query": "AI systems that use tools autonomously",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Planetary prediction engine: Automating global models via Earth AI",
+            "sourceKey": "rss:google-research:https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "langgenius/dify",
+            "sourceKey": "github:626805178",
+            "sourceName": "GitHub"
+          }
+        ],
+        "B": [
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Planetary prediction engine: Automating global models via Earth AI",
+            "sourceKey": "rss:google-research:https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "langgenius/dify",
+            "sourceKey": "github:626805178",
+            "sourceName": "GitHub"
+          }
+        ],
+        "C": []
+      }
+    },
+    {
+      "id": 8,
+      "category": "conceptual",
+      "query": "safety research about deceptive behavior in AI",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "AI Is Breaking This Thing We Call Trust",
+            "sourceKey": "hn:49644179",
+            "sourceName": "Hacker News · matheusml"
+          },
+          {
+            "title": "The AI policy window is open. We need to act.",
+            "sourceKey": "rss:openai:https://openai.com/index/ai-policy-window",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+            "sourceKey": "hn:49639408",
+            "sourceName": "Hacker News · pred_"
+          }
+        ],
+        "B": [],
+        "C": [
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "AI Is Breaking This Thing We Call Trust",
+            "sourceKey": "hn:49644179",
+            "sourceName": "Hacker News · matheusml"
+          },
+          {
+            "title": "The AI policy window is open. We need to act.",
+            "sourceKey": "rss:openai:https://openai.com/index/ai-policy-window",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+            "sourceKey": "hn:49639408",
+            "sourceName": "Hacker News · pred_"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "category": "conceptual",
+      "query": "techniques for grounding LLM answers in external information",
+      "filters": {},
+      "results": {
+        "A": [],
+        "B": [
+          {
+            "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+            "sourceKey": "arxiv:2609.11607",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+            "sourceKey": "arxiv:2609.11569",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+            "sourceKey": "rss:huggingface:https://huggingface.co/blog/allenai/benchmirt",
+            "sourceName": "Hugging Face"
+          },
+          {
+            "title": "A Training-Free, Alignment-Free Approach to Corporate Intelligence: Application to SEC Filings",
+            "sourceKey": "arxiv:2609.11620",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "ggml-org/llama.cpp",
+            "sourceKey": "github:612354784",
+            "sourceName": "GitHub"
+          }
+        ],
+        "C": [
+          {
+            "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+            "sourceKey": "arxiv:2609.11607",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+            "sourceKey": "arxiv:2609.11569",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+            "sourceKey": "rss:huggingface:https://huggingface.co/blog/allenai/benchmirt",
+            "sourceName": "Hugging Face"
+          },
+          {
+            "title": "A Training-Free, Alignment-Free Approach to Corporate Intelligence: Application to SEC Filings",
+            "sourceKey": "arxiv:2609.11620",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "ggml-org/llama.cpp",
+            "sourceKey": "github:612354784",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "category": "conceptual",
+      "query": "reducing hallucinations in large language models",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+            "sourceKey": "arxiv:2609.11616",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "huggingface/transformers",
+            "sourceKey": "github:155220641",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+            "sourceKey": "arxiv:2609.11569",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "How mobility gives language models a deeper understanding of place",
+            "sourceKey": "rss:google-research:https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+            "sourceName": "Google Research"
+          }
+        ],
+        "B": [
+          {
+            "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+            "sourceKey": "arxiv:2609.11616",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "huggingface/transformers",
+            "sourceKey": "github:155220641",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+            "sourceKey": "arxiv:2609.11569",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "How mobility gives language models a deeper understanding of place",
+            "sourceKey": "rss:google-research:https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+            "sourceName": "Google Research"
+          }
+        ],
+        "C": []
+      }
+    },
+    {
+      "id": 11,
+      "category": "cross_vocabulary",
+      "query": "make chatbots cite their sources",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Now everyone can put data to work",
+            "sourceKey": "rss:openai:https://openai.com/index/put-data-to-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+            "sourceKey": "rss:openai:https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+            "sourceKey": "hn:49639408",
+            "sourceName": "Hacker News · pred_"
+          },
+          {
+            "title": "Introducing ChatGPT for Financial Services",
+            "sourceKey": "rss:openai:https://openai.com/index/introducing-chatgpt-financial-services",
+            "sourceName": "OpenAI"
+          }
+        ],
+        "B": [],
+        "C": [
+          {
+            "title": "Now everyone can put data to work",
+            "sourceKey": "rss:openai:https://openai.com/index/put-data-to-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+            "sourceKey": "rss:openai:https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+            "sourceKey": "hn:49639408",
+            "sourceName": "Hacker News · pred_"
+          },
+          {
+            "title": "Introducing ChatGPT for Financial Services",
+            "sourceKey": "rss:openai:https://openai.com/index/introducing-chatgpt-financial-services",
+            "sourceName": "OpenAI"
+          }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "category": "cross_vocabulary",
+      "query": "AI that can browse the web and click buttons",
+      "filters": {},
+      "results": {
+        "A": [],
+        "B": [
+          {
+            "title": "AI Is Breaking This Thing We Call Trust",
+            "sourceKey": "hn:49644179",
+            "sourceName": "Hacker News · matheusml"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "browser-use/browser-use",
+            "sourceKey": "github:881458615",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          }
+        ],
+        "C": [
+          {
+            "title": "AI Is Breaking This Thing We Call Trust",
+            "sourceKey": "hn:49644179",
+            "sourceName": "Hacker News · matheusml"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "browser-use/browser-use",
+            "sourceKey": "github:881458615",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "category": "cross_vocabulary",
+      "query": "shrinking neural networks without losing accuracy",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+            "sourceKey": "rss:huggingface:https://huggingface.co/blog/grpo-with-trl-ifstruct",
+            "sourceName": "Hugging Face"
+          },
+          {
+            "title": "Particle GFlowNets: Rethinking Generative Marginalization Models",
+            "sourceKey": "arxiv:2609.11538",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Learn the Solid, Not the File: Canonical Inputs for Neural Networks on CAD Boundary Representations",
+            "sourceKey": "arxiv:2609.11573",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "A Comparative Evaluation of Pre-trained Convolutional Neural Networks for Melanoma Detection",
+            "sourceKey": "arxiv:2609.11550",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Transfer learning for genomic prediction in underrepresented populations",
+            "sourceKey": "rss:google-research:https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+            "sourceName": "Google Research"
+          }
+        ],
+        "B": [
+          {
+            "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+            "sourceKey": "rss:huggingface:https://huggingface.co/blog/grpo-with-trl-ifstruct",
+            "sourceName": "Hugging Face"
+          },
+          {
+            "title": "Particle GFlowNets: Rethinking Generative Marginalization Models",
+            "sourceKey": "arxiv:2609.11538",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Learn the Solid, Not the File: Canonical Inputs for Neural Networks on CAD Boundary Representations",
+            "sourceKey": "arxiv:2609.11573",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "A Comparative Evaluation of Pre-trained Convolutional Neural Networks for Melanoma Detection",
+            "sourceKey": "arxiv:2609.11550",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Transfer learning for genomic prediction in underrepresented populations",
+            "sourceKey": "rss:google-research:https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+            "sourceName": "Google Research"
+          }
+        ],
+        "C": []
+      }
+    },
+    {
+      "id": 14,
+      "category": "cross_vocabulary",
+      "query": "teaching computers to write code that fixes itself",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "multica-ai/andrej-karpathy-skills",
+            "sourceKey": "github:1142983825",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "anthropics/claude-code",
+            "sourceKey": "github:937253475",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Give Your Coding Agents a Memory You Own",
+            "sourceKey": "rss:huggingface:https://huggingface.co/blog/funes",
+            "sourceName": "Hugging Face"
+          }
+        ],
+        "B": [],
+        "C": [
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "multica-ai/andrej-karpathy-skills",
+            "sourceKey": "github:1142983825",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "anthropics/claude-code",
+            "sourceKey": "github:937253475",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Give Your Coding Agents a Memory You Own",
+            "sourceKey": "rss:huggingface:https://huggingface.co/blog/funes",
+            "sourceName": "Hugging Face"
+          }
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "category": "filtered",
+      "query": "new model release",
+      "filters": {
+        "sourceType": "hackernews"
+      },
+      "results": {
+        "A": [],
+        "B": [
+          {
+            "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+            "sourceKey": "hn:49645443",
+            "sourceName": "Hacker News · seelos"
+          },
+          {
+            "title": "OpenAI’s Navier-Stokes release included a Lean 4 formal proof",
+            "sourceKey": "hn:49650326",
+            "sourceName": "Hacker News · ibobev"
+          },
+          {
+            "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+            "sourceKey": "hn:49639408",
+            "sourceName": "Hacker News · pred_"
+          },
+          {
+            "title": "OpenAI Agents API",
+            "sourceKey": "hn:49649213",
+            "sourceName": "Hacker News · aquir"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          }
+        ],
+        "C": [
+          {
+            "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+            "sourceKey": "hn:49645443",
+            "sourceName": "Hacker News · seelos"
+          },
+          {
+            "title": "OpenAI’s Navier-Stokes release included a Lean 4 formal proof",
+            "sourceKey": "hn:49650326",
+            "sourceName": "Hacker News · ibobev"
+          },
+          {
+            "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+            "sourceKey": "hn:49639408",
+            "sourceName": "Hacker News · pred_"
+          },
+          {
+            "title": "OpenAI Agents API",
+            "sourceKey": "hn:49649213",
+            "sourceName": "Hacker News · aquir"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          }
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "category": "filtered",
+      "query": "open source",
+      "filters": {
+        "sourceType": "github"
+      },
+      "results": {
+        "A": [
+          {
+            "title": "obra/superpowers",
+            "sourceKey": "github:1073224795",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "farion1231/cc-switch",
+            "sourceKey": "github:1031912724",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "tensorflow/tensorflow",
+            "sourceKey": "github:45717250",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "langgenius/dify",
+            "sourceKey": "github:626805178",
+            "sourceName": "GitHub"
+          }
+        ],
+        "B": [
+          {
+            "title": "tensorflow/tensorflow",
+            "sourceKey": "github:45717250",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Shubhamsaboo/awesome-llm-apps",
+            "sourceKey": "github:793375104",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "obra/superpowers",
+            "sourceKey": "github:1073224795",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "farion1231/cc-switch",
+            "sourceKey": "github:1031912724",
+            "sourceName": "GitHub"
+          }
+        ],
+        "C": [
+          {
+            "title": "tensorflow/tensorflow",
+            "sourceKey": "github:45717250",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Shubhamsaboo/awesome-llm-apps",
+            "sourceKey": "github:793375104",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "category": "filtered",
+      "query": "language model",
+      "filters": {
+        "sinceDays": 7
+      },
+      "results": {
+        "A": [
+          {
+            "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+            "sourceKey": "arxiv:2609.11616",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+            "sourceKey": "arxiv:2609.11607",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "MAPLE: Memory-Augmented Planning with Language and Evolution",
+            "sourceKey": "arxiv:2609.11636",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "A Training-Free, Alignment-Free Approach to Corporate Intelligence: Application to SEC Filings",
+            "sourceKey": "arxiv:2609.11620",
+            "sourceName": "arXiv"
+          }
+        ],
+        "B": [
+          {
+            "title": "A Training-Free, Alignment-Free Approach to Corporate Intelligence: Application to SEC Filings",
+            "sourceKey": "arxiv:2609.11620",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+            "sourceKey": "arxiv:2609.11607",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Characterizing Job Power Elasticity for Power-Flexible AI Training",
+            "sourceKey": "arxiv:2609.11542",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "MAPLE: Memory-Augmented Planning with Language and Evolution",
+            "sourceKey": "arxiv:2609.11636",
+            "sourceName": "arXiv"
+          }
+        ],
+        "C": [
+          {
+            "title": "huggingface/transformers",
+            "sourceKey": "github:155220641",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+            "sourceKey": "arxiv:2609.11616",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "ggml-org/llama.cpp",
+            "sourceKey": "github:612354784",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "langflow-ai/langflow",
+            "sourceKey": "github:599320067",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "MAPLE: Memory-Augmented Planning with Language and Evolution",
+            "sourceKey": "arxiv:2609.11636",
+            "sourceName": "arXiv"
+          }
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "category": "filtered",
+      "query": "reasoning",
+      "filters": {
+        "bookmarkedOnly": true
+      },
+      "results": {
+        "A": [],
+        "B": [],
+        "C": []
+      }
+    }
+  ]
+}

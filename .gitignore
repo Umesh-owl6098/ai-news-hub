@@ -32,9 +32,24 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
+
+# generated graphify architecture graphs (regenerate with `graphify .`)
+/graphify-out/
+
+# playwright-cli session snapshots/screenshots (regenerate as needed)
+/.playwright-cli/
+
+# generated AI-evaluation reports (Step 10) — a snapshot of one run
+# against live external content and a real model, not a fixed benchmark
+# this repo has a reason to freeze in git history yet. The selection
+# algorithm and rubric that produce these are code and stay committed
+# (src/lib/ai/evaluationSelection.ts, evaluationRubric.ts).
+/artifacts/ai-evaluation/*
+!/artifacts/ai-evaluation/.gitkeep
 
 # typescript
 *.tsbuildinfo

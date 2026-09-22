@@ -1,0 +1,1 @@
+ALTER TABLE "feed_items" ALTER COLUMN "source_key" SET DATA TYPE text;

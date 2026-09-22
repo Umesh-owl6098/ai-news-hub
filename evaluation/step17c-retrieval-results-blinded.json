@@ -1,0 +1,1717 @@
+{
+  "generatedAt": "2026-09-11T06:08:48.495Z",
+  "queries": [
+    {
+      "id": 1,
+      "category": "exact",
+      "query": "anthropics/claude-code",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "anthropics/claude-code",
+            "sourceKey": "github:937253475",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "affaan-m/ECC",
+            "sourceKey": "github:1136590548",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "multica-ai/andrej-karpathy-skills",
+            "sourceKey": "github:1142983825",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "farion1231/cc-switch",
+            "sourceKey": "github:1031912724",
+            "sourceName": "GitHub"
+          }
+        ],
+        "B": [
+          {
+            "title": "anthropics/claude-code",
+            "sourceKey": "github:937253475",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "affaan-m/ECC",
+            "sourceKey": "github:1136590548",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "multica-ai/andrej-karpathy-skills",
+            "sourceKey": "github:1142983825",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "farion1231/cc-switch",
+            "sourceKey": "github:1031912724",
+            "sourceName": "GitHub"
+          }
+        ],
+        "C": [
+          {
+            "title": "anthropics/claude-code",
+            "sourceKey": "github:937253475",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "category": "exact",
+      "query": "AutoGPT",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "GPT-6 Astra: The next generation in intelligence for work",
+            "sourceKey": "rss:openai:https://openai.com/index/gpt-6-astra-next-generation-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+            "sourceKey": "rss:openai:https://openai.com/index/codex-quantum-computing-experiments",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Introducing ChatGPT for Financial Services",
+            "sourceKey": "rss:openai:https://openai.com/index/introducing-chatgpt-financial-services",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+            "sourceName": "Google DeepMind"
+          }
+        ],
+        "B": [
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          }
+        ],
+        "C": [
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "GPT-6 Astra: The next generation in intelligence for work",
+            "sourceKey": "rss:openai:https://openai.com/index/gpt-6-astra-next-generation-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+            "sourceKey": "rss:openai:https://openai.com/index/codex-quantum-computing-experiments",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Introducing ChatGPT for Financial Services",
+            "sourceKey": "rss:openai:https://openai.com/index/introducing-chatgpt-financial-services",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+            "sourceName": "Google DeepMind"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "category": "exact",
+      "query": "tensorflow",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "tensorflow/tensorflow",
+            "sourceKey": "github:45717250",
+            "sourceName": "GitHub"
+          }
+        ],
+        "B": [
+          {
+            "title": "tensorflow/tensorflow",
+            "sourceKey": "github:45717250",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "huggingface/transformers",
+            "sourceKey": "github:155220641",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+            "sourceKey": "arxiv:2609.11527",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "langflow-ai/langflow",
+            "sourceKey": "github:599320067",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+            "sourceKey": "rss:google-research:https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+            "sourceName": "Google Research"
+          }
+        ],
+        "C": [
+          {
+            "title": "tensorflow/tensorflow",
+            "sourceKey": "github:45717250",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "huggingface/transformers",
+            "sourceKey": "github:155220641",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+            "sourceKey": "arxiv:2609.11527",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "langflow-ai/langflow",
+            "sourceKey": "github:599320067",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+            "sourceKey": "rss:google-research:https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+            "sourceName": "Google Research"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "category": "exact",
+      "query": "browser-use",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "browser-use/browser-use",
+            "sourceKey": "github:881458615",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "farion1231/cc-switch",
+            "sourceKey": "github:1031912724",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "obra/superpowers",
+            "sourceKey": "github:1073224795",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "VoltAgent/awesome-design-md",
+            "sourceKey": "github:1197515131",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "NousResearch/hermes-agent",
+            "sourceKey": "github:1024554267",
+            "sourceName": "GitHub"
+          }
+        ],
+        "B": [
+          {
+            "title": "browser-use/browser-use",
+            "sourceKey": "github:881458615",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "farion1231/cc-switch",
+            "sourceKey": "github:1031912724",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "obra/superpowers",
+            "sourceKey": "github:1073224795",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "VoltAgent/awesome-design-md",
+            "sourceKey": "github:1197515131",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "NousResearch/hermes-agent",
+            "sourceKey": "github:1024554267",
+            "sourceName": "GitHub"
+          }
+        ],
+        "C": [
+          {
+            "title": "browser-use/browser-use",
+            "sourceKey": "github:881458615",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "category": "exact",
+      "query": "OmniKVQuant",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Gemini Omni 1.1 Flash lets you build with more control",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "MMGait: Benchmarking and Unifying Gait Recognition across Heterogeneous Modalities",
+            "sourceKey": "arxiv:2609.11601",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+            "sourceKey": "arxiv:2609.11569",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Self-Supervised Cardiac Phase Detection via Single-Parameter Latent Orbits",
+            "sourceKey": "arxiv:2609.11650",
+            "sourceName": "arXiv"
+          }
+        ],
+        "B": [
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          }
+        ],
+        "C": [
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Gemini Omni 1.1 Flash lets you build with more control",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "MMGait: Benchmarking and Unifying Gait Recognition across Heterogeneous Modalities",
+            "sourceKey": "arxiv:2609.11601",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+            "sourceKey": "arxiv:2609.11569",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Self-Supervised Cardiac Phase Detection via Single-Parameter Latent Orbits",
+            "sourceKey": "arxiv:2609.11650",
+            "sourceName": "arXiv"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "category": "literal_keyword",
+      "query": "melanoma detection",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "A Comparative Evaluation of Pre-trained Convolutional Neural Networks for Melanoma Detection",
+            "sourceKey": "arxiv:2609.11550",
+            "sourceName": "arXiv"
+          }
+        ],
+        "B": [
+          {
+            "title": "A Comparative Evaluation of Pre-trained Convolutional Neural Networks for Melanoma Detection",
+            "sourceKey": "arxiv:2609.11550",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+            "sourceKey": "arxiv:2609.11527",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Self-Supervised Cardiac Phase Detection via Single-Parameter Latent Orbits",
+            "sourceKey": "arxiv:2609.11650",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+            "sourceKey": "rss:google-research:https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "MMGait: Benchmarking and Unifying Gait Recognition across Heterogeneous Modalities",
+            "sourceKey": "arxiv:2609.11601",
+            "sourceName": "arXiv"
+          }
+        ],
+        "C": [
+          {
+            "title": "A Comparative Evaluation of Pre-trained Convolutional Neural Networks for Melanoma Detection",
+            "sourceKey": "arxiv:2609.11550",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+            "sourceKey": "arxiv:2609.11527",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Self-Supervised Cardiac Phase Detection via Single-Parameter Latent Orbits",
+            "sourceKey": "arxiv:2609.11650",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+            "sourceKey": "rss:google-research:https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "MMGait: Benchmarking and Unifying Gait Recognition across Heterogeneous Modalities",
+            "sourceKey": "arxiv:2609.11601",
+            "sourceName": "arXiv"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "category": "literal_keyword",
+      "query": "gait recognition",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "MMGait: Benchmarking and Unifying Gait Recognition across Heterogeneous Modalities",
+            "sourceKey": "arxiv:2609.11601",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Self-Supervised Cardiac Phase Detection via Single-Parameter Latent Orbits",
+            "sourceKey": "arxiv:2609.11650",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "How mobility gives language models a deeper understanding of place",
+            "sourceKey": "rss:google-research:https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+            "sourceKey": "rss:google-research:https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "GlucoFM: Foundation model for continuous glucose monitoring",
+            "sourceKey": "rss:google-research:https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
+            "sourceName": "Google Research"
+          }
+        ],
+        "B": [
+          {
+            "title": "MMGait: Benchmarking and Unifying Gait Recognition across Heterogeneous Modalities",
+            "sourceKey": "arxiv:2609.11601",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Self-Supervised Cardiac Phase Detection via Single-Parameter Latent Orbits",
+            "sourceKey": "arxiv:2609.11650",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "How mobility gives language models a deeper understanding of place",
+            "sourceKey": "rss:google-research:https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+            "sourceKey": "rss:google-research:https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "GlucoFM: Foundation model for continuous glucose monitoring",
+            "sourceKey": "rss:google-research:https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
+            "sourceName": "Google Research"
+          }
+        ],
+        "C": [
+          {
+            "title": "MMGait: Benchmarking and Unifying Gait Recognition across Heterogeneous Modalities",
+            "sourceKey": "arxiv:2609.11601",
+            "sourceName": "arXiv"
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "category": "literal_keyword",
+      "query": "knowledge graph",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+            "sourceKey": "arxiv:2609.11569",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
+            "sourceKey": "rss:google-research:https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Now everyone can put data to work",
+            "sourceKey": "rss:openai:https://openai.com/index/put-data-to-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "langgenius/dify",
+            "sourceKey": "github:626805178",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+            "sourceKey": "rss:google-research:https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+            "sourceName": "Google Research"
+          }
+        ],
+        "B": [
+          {
+            "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+            "sourceKey": "arxiv:2609.11569",
+            "sourceName": "arXiv"
+          }
+        ],
+        "C": [
+          {
+            "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+            "sourceKey": "arxiv:2609.11569",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
+            "sourceKey": "rss:google-research:https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Now everyone can put data to work",
+            "sourceKey": "rss:openai:https://openai.com/index/put-data-to-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "langgenius/dify",
+            "sourceKey": "github:626805178",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+            "sourceKey": "rss:google-research:https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+            "sourceName": "Google Research"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "category": "literal_keyword",
+      "query": "text-to-image",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Prompt Revision as a Source of Cultural Bias in Text-to-Image Systems",
+            "sourceKey": "arxiv:2609.11532",
+            "sourceName": "arXiv"
+          }
+        ],
+        "B": [
+          {
+            "title": "huggingface/transformers",
+            "sourceKey": "github:155220641",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
+            "sourceKey": "rss:google-research:https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Prompt Revision as a Source of Cultural Bias in Text-to-Image Systems",
+            "sourceKey": "arxiv:2609.11532",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Complex-Text Robustness Evaluation and Failure Diagnosis for Low-Resource Multilingual Text-to-Speech",
+            "sourceKey": "arxiv:2609.11545",
+            "sourceName": "arXiv"
+          }
+        ],
+        "C": [
+          {
+            "title": "Prompt Revision as a Source of Cultural Bias in Text-to-Image Systems",
+            "sourceKey": "arxiv:2609.11532",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "huggingface/transformers",
+            "sourceKey": "github:155220641",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
+            "sourceKey": "rss:google-research:https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Complex-Text Robustness Evaluation and Failure Diagnosis for Low-Resource Multilingual Text-to-Speech",
+            "sourceKey": "arxiv:2609.11545",
+            "sourceName": "arXiv"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "category": "conceptual",
+      "query": "reducing memory usage when AI models process audio and video together",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "ZipCodec: Ultra-Low-Frame-Rate Streaming Speech Coding",
+            "sourceKey": "arxiv:2609.11642",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "huggingface/transformers",
+            "sourceKey": "github:155220641",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "World in World: Explore the World with World Models",
+            "sourceKey": "arxiv:2609.11548",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+            "sourceKey": "arxiv:2609.11638",
+            "sourceName": "arXiv"
+          }
+        ],
+        "B": [
+          {
+            "title": "ZipCodec: Ultra-Low-Frame-Rate Streaming Speech Coding",
+            "sourceKey": "arxiv:2609.11642",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "huggingface/transformers",
+            "sourceKey": "github:155220641",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "World in World: Explore the World with World Models",
+            "sourceKey": "arxiv:2609.11548",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+            "sourceKey": "arxiv:2609.11638",
+            "sourceName": "arXiv"
+          }
+        ],
+        "C": []
+      }
+    },
+    {
+      "id": 11,
+      "category": "conceptual",
+      "query": "using AI to search for new antibiotics",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+            "sourceKey": "rss:openai:https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+            "sourceKey": "rss:google-research:https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "OpenAI Agents API",
+            "sourceKey": "hn:49649213",
+            "sourceName": "Hacker News · aquir"
+          },
+          {
+            "title": "langchain-ai/langchain",
+            "sourceKey": "github:552661142",
+            "sourceName": "GitHub"
+          }
+        ],
+        "B": [],
+        "C": [
+          {
+            "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+            "sourceKey": "rss:openai:https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+            "sourceKey": "rss:google-research:https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "OpenAI Agents API",
+            "sourceKey": "hn:49649213",
+            "sourceName": "Hacker News · aquir"
+          },
+          {
+            "title": "langchain-ai/langchain",
+            "sourceKey": "github:552661142",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "category": "conceptual",
+      "query": "predicting how severe a car crash will be",
+      "filters": {},
+      "results": {
+        "A": [],
+        "B": [
+          {
+            "title": "A distribution-free certification framework for trustworthy crash-severity prediction",
+            "sourceKey": "arxiv:2609.11592",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+            "sourceKey": "arxiv:2609.11527",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Planetary prediction engine: Automating global models via Earth AI",
+            "sourceKey": "rss:google-research:https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "RDDMPI: Residual Denoising Diffusion Model for Probabilistic Multivariate Time Series Imputation",
+            "sourceKey": "arxiv:2609.11648",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+            "sourceKey": "rss:google-research:https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+            "sourceName": "Google Research"
+          }
+        ],
+        "C": [
+          {
+            "title": "A distribution-free certification framework for trustworthy crash-severity prediction",
+            "sourceKey": "arxiv:2609.11592",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+            "sourceKey": "arxiv:2609.11527",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Planetary prediction engine: Automating global models via Earth AI",
+            "sourceKey": "rss:google-research:https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "RDDMPI: Residual Denoising Diffusion Model for Probabilistic Multivariate Time Series Imputation",
+            "sourceKey": "arxiv:2609.11648",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+            "sourceKey": "rss:google-research:https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+            "sourceName": "Google Research"
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "category": "conceptual",
+      "query": "AI that helps forecast a company's financial performance using alternative data sources",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+            "sourceKey": "arxiv:2609.11607",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Introducing ChatGPT for Financial Services",
+            "sourceKey": "rss:openai:https://openai.com/index/introducing-chatgpt-financial-services",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+            "sourceKey": "rss:google-research:https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Planetary prediction engine: Automating global models via Earth AI",
+            "sourceKey": "rss:google-research:https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "A Training-Free, Alignment-Free Approach to Corporate Intelligence: Application to SEC Filings",
+            "sourceKey": "arxiv:2609.11620",
+            "sourceName": "arXiv"
+          }
+        ],
+        "B": [
+          {
+            "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+            "sourceKey": "arxiv:2609.11607",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Introducing ChatGPT for Financial Services",
+            "sourceKey": "rss:openai:https://openai.com/index/introducing-chatgpt-financial-services",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+            "sourceKey": "rss:google-research:https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Planetary prediction engine: Automating global models via Earth AI",
+            "sourceKey": "rss:google-research:https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "A Training-Free, Alignment-Free Approach to Corporate Intelligence: Application to SEC Filings",
+            "sourceKey": "arxiv:2609.11620",
+            "sourceName": "arXiv"
+          }
+        ],
+        "C": []
+      }
+    },
+    {
+      "id": 14,
+      "category": "cross_vocabulary",
+      "query": "software that watches your bank transactions to guess how a business is doing",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Introducing ChatGPT for Financial Services",
+            "sourceKey": "rss:openai:https://openai.com/index/introducing-chatgpt-financial-services",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+            "sourceKey": "arxiv:2609.11607",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "GPT-6 Astra: The next generation in intelligence for work",
+            "sourceKey": "rss:openai:https://openai.com/index/gpt-6-astra-next-generation-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+            "sourceKey": "rss:google-research:https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "A Training-Free, Alignment-Free Approach to Corporate Intelligence: Application to SEC Filings",
+            "sourceKey": "arxiv:2609.11620",
+            "sourceName": "arXiv"
+          }
+        ],
+        "B": [],
+        "C": [
+          {
+            "title": "Introducing ChatGPT for Financial Services",
+            "sourceKey": "rss:openai:https://openai.com/index/introducing-chatgpt-financial-services",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+            "sourceKey": "arxiv:2609.11607",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "GPT-6 Astra: The next generation in intelligence for work",
+            "sourceKey": "rss:openai:https://openai.com/index/gpt-6-astra-next-generation-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+            "sourceKey": "rss:google-research:https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "A Training-Free, Alignment-Free Approach to Corporate Intelligence: Application to SEC Filings",
+            "sourceKey": "arxiv:2609.11620",
+            "sourceName": "arXiv"
+          }
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "category": "cross_vocabulary",
+      "query": "AI that can click around a website by itself",
+      "filters": {},
+      "results": {
+        "A": [],
+        "B": [
+          {
+            "title": "AI Is Breaking This Thing We Call Trust",
+            "sourceKey": "hn:49644179",
+            "sourceName": "Hacker News · matheusml"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          }
+        ],
+        "C": [
+          {
+            "title": "AI Is Breaking This Thing We Call Trust",
+            "sourceKey": "hn:49644179",
+            "sourceName": "Hacker News · matheusml"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "category": "cross_vocabulary",
+      "query": "computer vision for spotting early-stage cancer",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "A Comparative Evaluation of Pre-trained Convolutional Neural Networks for Melanoma Detection",
+            "sourceKey": "arxiv:2609.11550",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Self-Supervised Cardiac Phase Detection via Single-Parameter Latent Orbits",
+            "sourceKey": "arxiv:2609.11650",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+            "sourceKey": "arxiv:2609.11527",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+            "sourceKey": "rss:google-research:https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Transfer learning for genomic prediction in underrepresented populations",
+            "sourceKey": "rss:google-research:https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+            "sourceName": "Google Research"
+          }
+        ],
+        "B": [
+          {
+            "title": "A Comparative Evaluation of Pre-trained Convolutional Neural Networks for Melanoma Detection",
+            "sourceKey": "arxiv:2609.11550",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Self-Supervised Cardiac Phase Detection via Single-Parameter Latent Orbits",
+            "sourceKey": "arxiv:2609.11650",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+            "sourceKey": "arxiv:2609.11527",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+            "sourceKey": "rss:google-research:https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Transfer learning for genomic prediction in underrepresented populations",
+            "sourceKey": "rss:google-research:https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+            "sourceName": "Google Research"
+          }
+        ],
+        "C": []
+      }
+    },
+    {
+      "id": 17,
+      "category": "cross_vocabulary",
+      "query": "shrinking large language models so they run on cheaper hardware",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Characterizing Job Power Elasticity for Power-Flexible AI Training",
+            "sourceKey": "arxiv:2609.11542",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+            "sourceKey": "arxiv:2609.11616",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "huggingface/transformers",
+            "sourceKey": "github:155220641",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+            "sourceKey": "rss:huggingface:https://huggingface.co/blog/grpo-with-trl-ifstruct",
+            "sourceName": "Hugging Face"
+          }
+        ],
+        "B": [],
+        "C": [
+          {
+            "title": "Characterizing Job Power Elasticity for Power-Flexible AI Training",
+            "sourceKey": "arxiv:2609.11542",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+            "sourceKey": "arxiv:2609.11616",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "huggingface/transformers",
+            "sourceKey": "github:155220641",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+            "sourceKey": "rss:huggingface:https://huggingface.co/blog/grpo-with-trl-ifstruct",
+            "sourceName": "Hugging Face"
+          }
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "category": "ambiguous_control",
+      "query": "artificial general intelligence timeline predictions",
+      "filters": {},
+      "results": {
+        "A": [],
+        "B": [
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "Planetary prediction engine: Automating global models via Earth AI",
+            "sourceKey": "rss:google-research:https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "GPT-6 Astra: The next generation in intelligence for work",
+            "sourceKey": "rss:openai:https://openai.com/index/gpt-6-astra-next-generation-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          }
+        ],
+        "C": [
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "Planetary prediction engine: Automating global models via Earth AI",
+            "sourceKey": "rss:google-research:https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "GPT-6 Astra: The next generation in intelligence for work",
+            "sourceKey": "rss:openai:https://openai.com/index/gpt-6-astra-next-generation-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "category": "ambiguous_control",
+      "query": "self-driving car safety regulations",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+            "sourceKey": "arxiv:2609.11527",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "The AI policy window is open. We need to act.",
+            "sourceKey": "rss:openai:https://openai.com/index/ai-policy-window",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "A distribution-free certification framework for trustworthy crash-severity prediction",
+            "sourceKey": "arxiv:2609.11592",
+            "sourceName": "arXiv"
+          }
+        ],
+        "B": [
+          {
+            "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+            "sourceKey": "arxiv:2609.11527",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "The AI policy window is open. We need to act.",
+            "sourceKey": "rss:openai:https://openai.com/index/ai-policy-window",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "A distribution-free certification framework for trustworthy crash-severity prediction",
+            "sourceKey": "arxiv:2609.11592",
+            "sourceName": "arXiv"
+          }
+        ],
+        "C": []
+      }
+    },
+    {
+      "id": 20,
+      "category": "ambiguous_control",
+      "query": "AI chatbot for customer service",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Introducing ChatGPT for Financial Services",
+            "sourceKey": "rss:openai:https://openai.com/index/introducing-chatgpt-financial-services",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Now everyone can put data to work",
+            "sourceKey": "rss:openai:https://openai.com/index/put-data-to-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "microsoft/generative-ai-for-beginners",
+            "sourceKey": "github:655806940",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "NousResearch/hermes-agent",
+            "sourceKey": "github:1024554267",
+            "sourceName": "GitHub"
+          }
+        ],
+        "B": [],
+        "C": [
+          {
+            "title": "Introducing ChatGPT for Financial Services",
+            "sourceKey": "rss:openai:https://openai.com/index/introducing-chatgpt-financial-services",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "Now everyone can put data to work",
+            "sourceKey": "rss:openai:https://openai.com/index/put-data-to-work",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "microsoft/generative-ai-for-beginners",
+            "sourceKey": "github:655806940",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "NousResearch/hermes-agent",
+            "sourceKey": "github:1024554267",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "category": "ambiguous_control",
+      "query": "using AI to write video game code",
+      "filters": {},
+      "results": {
+        "A": [],
+        "B": [
+          {
+            "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "microsoft/generative-ai-for-beginners",
+            "sourceKey": "github:655806940",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          }
+        ],
+        "C": [
+          {
+            "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "sourceKey": "github:943398999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "microsoft/generative-ai-for-beginners",
+            "sourceKey": "github:655806940",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          }
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "category": "literal_keyword",
+      "query": "quantum computing experiments",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+            "sourceKey": "rss:openai:https://openai.com/index/codex-quantum-computing-experiments",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+            "sourceKey": "hn:49639408",
+            "sourceName": "Hacker News · pred_"
+          },
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
+            "sourceKey": "hn:49651372",
+            "sourceName": "Hacker News · jonifico"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          }
+        ],
+        "B": [
+          {
+            "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+            "sourceKey": "rss:openai:https://openai.com/index/codex-quantum-computing-experiments",
+            "sourceName": "OpenAI"
+          },
+          {
+            "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+            "sourceKey": "hn:49639408",
+            "sourceName": "Hacker News · pred_"
+          },
+          {
+            "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+            "sourceKey": "arxiv:2609.11582",
+            "sourceName": "arXiv"
+          },
+          {
+            "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
+            "sourceKey": "hn:49651372",
+            "sourceName": "Hacker News · jonifico"
+          },
+          {
+            "title": "Piloting the world's first double-blind AI evaluations",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+            "sourceName": "Google DeepMind"
+          }
+        ],
+        "C": [
+          {
+            "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+            "sourceKey": "rss:openai:https://openai.com/index/codex-quantum-computing-experiments",
+            "sourceName": "OpenAI"
+          }
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "category": "conceptual",
+      "query": "AI model that predicts the weather",
+      "filters": {},
+      "results": {
+        "A": [
+          {
+            "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "Planetary prediction engine: Automating global models via Earth AI",
+            "sourceKey": "rss:google-research:https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+            "sourceKey": "rss:google-research:https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Mapping global methane emissions from space with deep learning",
+            "sourceKey": "rss:google-research:https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+            "sourceKey": "arxiv:2609.11607",
+            "sourceName": "arXiv"
+          }
+        ],
+        "B": [],
+        "C": [
+          {
+            "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+            "sourceKey": "rss:deepmind:https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+            "sourceName": "Google DeepMind"
+          },
+          {
+            "title": "Planetary prediction engine: Automating global models via Earth AI",
+            "sourceKey": "rss:google-research:https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+            "sourceKey": "rss:google-research:https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Mapping global methane emissions from space with deep learning",
+            "sourceKey": "rss:google-research:https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/",
+            "sourceName": "Google Research"
+          },
+          {
+            "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+            "sourceKey": "arxiv:2609.11607",
+            "sourceName": "arXiv"
+          }
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "category": "filtered",
+      "query": "agent",
+      "filters": {
+        "sourceType": "github"
+      },
+      "results": {
+        "A": [
+          {
+            "title": "NousResearch/hermes-agent",
+            "sourceKey": "github:1024554267",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "langgenius/dify",
+            "sourceKey": "github:626805178",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "langchain-ai/langchain",
+            "sourceKey": "github:552661142",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "DietrichGebert/ponytail",
+            "sourceKey": "github:1266797999",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Shubhamsaboo/awesome-llm-apps",
+            "sourceKey": "github:793375104",
+            "sourceName": "GitHub"
+          }
+        ],
+        "B": [
+          {
+            "title": "langgenius/dify",
+            "sourceKey": "github:626805178",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "browser-use/browser-use",
+            "sourceKey": "github:881458615",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "langchain-ai/langchain",
+            "sourceKey": "github:552661142",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "msitarzewski/agency-agents",
+            "sourceKey": "github:1075372545",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "NousResearch/hermes-agent",
+            "sourceKey": "github:1024554267",
+            "sourceName": "GitHub"
+          }
+        ],
+        "C": [
+          {
+            "title": "langgenius/dify",
+            "sourceKey": "github:626805178",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "NousResearch/hermes-agent",
+            "sourceKey": "github:1024554267",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "langchain-ai/langchain",
+            "sourceKey": "github:552661142",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "browser-use/browser-use",
+            "sourceKey": "github:881458615",
+            "sourceName": "GitHub"
+          },
+          {
+            "title": "Significant-Gravitas/AutoGPT",
+            "sourceKey": "github:614765452",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "category": "filtered",
+      "query": "OpenAI",
+      "filters": {
+        "sourceType": "hackernews"
+      },
+      "results": {
+        "A": [
+          {
+            "title": "OpenAI Agents API",
+            "sourceKey": "hn:49649213",
+            "sourceName": "Hacker News · aquir"
+          },
+          {
+            "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+            "sourceKey": "hn:49639408",
+            "sourceName": "Hacker News · pred_"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "OpenAI’s Navier-Stokes release included a Lean 4 formal proof",
+            "sourceKey": "hn:49650326",
+            "sourceName": "Hacker News · ibobev"
+          },
+          {
+            "title": "AI Is Breaking This Thing We Call Trust",
+            "sourceKey": "hn:49644179",
+            "sourceName": "Hacker News · matheusml"
+          }
+        ],
+        "B": [
+          {
+            "title": "OpenAI Agents API",
+            "sourceKey": "hn:49649213",
+            "sourceName": "Hacker News · aquir"
+          },
+          {
+            "title": "OpenAI’s Navier-Stokes release included a Lean 4 formal proof",
+            "sourceKey": "hn:49650326",
+            "sourceName": "Hacker News · ibobev"
+          },
+          {
+            "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+            "sourceKey": "hn:49639408",
+            "sourceName": "Hacker News · pred_"
+          },
+          {
+            "title": "Detecting and countering misuse of AI: September 2026",
+            "sourceKey": "hn:49647300",
+            "sourceName": "Hacker News · garo-pro"
+          },
+          {
+            "title": "AI Is Breaking This Thing We Call Trust",
+            "sourceKey": "hn:49644179",
+            "sourceName": "Hacker News · matheusml"
+          }
+        ],
+        "C": [
+          {
+            "title": "OpenAI’s Navier-Stokes release included a Lean 4 formal proof",
+            "sourceKey": "hn:49650326",
+            "sourceName": "Hacker News · ibobev"
+          },
+          {
+            "title": "OpenAI Agents API",
+            "sourceKey": "hn:49649213",
+            "sourceName": "Hacker News · aquir"
+          },
+          {
+            "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+            "sourceKey": "hn:49639408",
+            "sourceName": "Hacker News · pred_"
+          }
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "category": "filtered",
+      "query": "coding agent",
+      "filters": {
+        "bookmarkedOnly": true
+      },
+      "results": {
+        "A": [
+          {
+            "title": "anthropics/claude-code",
+            "sourceKey": "github:937253475",
+            "sourceName": "GitHub"
+          }
+        ],
+        "B": [
+          {
+            "title": "anthropics/claude-code",
+            "sourceKey": "github:937253475",
+            "sourceName": "GitHub"
+          }
+        ],
+        "C": [
+          {
+            "title": "anthropics/claude-code",
+            "sourceKey": "github:937253475",
+            "sourceName": "GitHub"
+          }
+        ]
+      }
+    }
+  ]
+}

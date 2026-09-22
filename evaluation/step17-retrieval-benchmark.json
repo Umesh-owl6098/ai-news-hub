@@ -1,0 +1,24 @@
+{
+  "_comment": "Step 17 retrieval evaluation benchmark. Fixed BEFORE any semantic/hybrid results have ever been reviewed, per the milestone's explicit no-cherry-picking requirement — do not edit query wording or add/remove queries after seeing output from scripts/ai-retrieval-eval.ts. Categories: exact (known name/term/title fragment — lexical FTS should usually win or tie), conceptual (a described idea, no guaranteed keyword overlap), cross_vocabulary (deliberately worded differently than likely article phrasing), filtered (combined with an existing source/time/bookmark filter).",
+  "schemaVersion": 1,
+  "queries": [
+    { "id": 1, "category": "exact", "query": "GitHub Copilot", "filters": {} },
+    { "id": 2, "category": "exact", "query": "retrieval augmented generation", "filters": {} },
+    { "id": 3, "category": "exact", "query": "pgvector", "filters": {} },
+    { "id": 4, "category": "exact", "query": "AutoGPT", "filters": {} },
+    { "id": 5, "category": "exact", "query": "LangChain", "filters": {} },
+    { "id": 6, "category": "conceptual", "query": "efficient training of small language models", "filters": {} },
+    { "id": 7, "category": "conceptual", "query": "AI systems that use tools autonomously", "filters": {} },
+    { "id": 8, "category": "conceptual", "query": "safety research about deceptive behavior in AI", "filters": {} },
+    { "id": 9, "category": "conceptual", "query": "techniques for grounding LLM answers in external information", "filters": {} },
+    { "id": 10, "category": "conceptual", "query": "reducing hallucinations in large language models", "filters": {} },
+    { "id": 11, "category": "cross_vocabulary", "query": "make chatbots cite their sources", "filters": {}, "intent": "should surface RAG / grounding articles despite no keyword overlap" },
+    { "id": 12, "category": "cross_vocabulary", "query": "AI that can browse the web and click buttons", "filters": {}, "intent": "should surface agentic / tool-use / browser-automation articles" },
+    { "id": 13, "category": "cross_vocabulary", "query": "shrinking neural networks without losing accuracy", "filters": {}, "intent": "should surface distillation / quantization / pruning articles" },
+    { "id": 14, "category": "cross_vocabulary", "query": "teaching computers to write code that fixes itself", "filters": {}, "intent": "should surface self-healing / autonomous coding-agent articles" },
+    { "id": 15, "category": "filtered", "query": "new model release", "filters": { "sourceType": "hackernews" } },
+    { "id": 16, "category": "filtered", "query": "open source", "filters": { "sourceType": "github" } },
+    { "id": 17, "category": "filtered", "query": "language model", "filters": { "sinceDays": 7 } },
+    { "id": 18, "category": "filtered", "query": "reasoning", "filters": { "bookmarkedOnly": true }, "notes": "meaningful only once at least one relevant item is bookmarked in the corpus being evaluated against; an empty result from every strategy is itself a valid, informative outcome (confirms the filter isn't silently ignored) if nothing is bookmarked yet" }
+  ]
+}

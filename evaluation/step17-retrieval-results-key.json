@@ -1,0 +1,92 @@
+{
+  "1": {
+    "A": "semantic",
+    "B": "hybrid",
+    "C": "lexical"
+  },
+  "2": {
+    "A": "hybrid",
+    "B": "lexical",
+    "C": "semantic"
+  },
+  "3": {
+    "A": "lexical",
+    "B": "semantic",
+    "C": "hybrid"
+  },
+  "4": {
+    "A": "semantic",
+    "B": "hybrid",
+    "C": "lexical"
+  },
+  "5": {
+    "A": "hybrid",
+    "B": "lexical",
+    "C": "semantic"
+  },
+  "6": {
+    "A": "lexical",
+    "B": "semantic",
+    "C": "hybrid"
+  },
+  "7": {
+    "A": "semantic",
+    "B": "hybrid",
+    "C": "lexical"
+  },
+  "8": {
+    "A": "hybrid",
+    "B": "lexical",
+    "C": "semantic"
+  },
+  "9": {
+    "A": "lexical",
+    "B": "semantic",
+    "C": "hybrid"
+  },
+  "10": {
+    "A": "semantic",
+    "B": "hybrid",
+    "C": "lexical"
+  },
+  "11": {
+    "A": "hybrid",
+    "B": "lexical",
+    "C": "semantic"
+  },
+  "12": {
+    "A": "lexical",
+    "B": "semantic",
+    "C": "hybrid"
+  },
+  "13": {
+    "A": "semantic",
+    "B": "hybrid",
+    "C": "lexical"
+  },
+  "14": {
+    "A": "hybrid",
+    "B": "lexical",
+    "C": "semantic"
+  },
+  "15": {
+    "A": "lexical",
+    "B": "semantic",
+    "C": "hybrid"
+  },
+  "16": {
+    "A": "semantic",
+    "B": "hybrid",
+    "C": "lexical"
+  },
+  "17": {
+    "A": "hybrid",
+    "B": "lexical",
+    "C": "semantic"
+  },
+  "18": {
+    "A": "lexical",
+    "B": "semantic",
+    "C": "hybrid"
+  }
+}
