@@ -94,6 +94,55 @@ npm run start
 
 Requires the same environment variables as development (`DATABASE_URL`, optionally `GITHUB_TOKEN`/the AI variables below) — `next build` runs with none of them configured just fine (every feature degrades to its documented no-op state), but `DATABASE_URL` is what makes the deployed app actually persist anything.
 
+## Production deployment (Railway)
+
+A known-good v1 production deployment runs on [Railway](https://railway.com). The facts under "Observed in production" were confirmed by the operator against the live deployment, not reproduced by the repository's tests.
+
+**Architecture.** Two Railway services: (1) this Next.js app, built with `npm run build` and served with `npm run start`; (2) a PostgreSQL service with the `pgvector` extension and a persistent volume. The app reads `DATABASE_URL` (pointing at the Postgres service) and nothing vendor-specific. There is no scheduler, queue, worker or auth — it is a single-user app.
+
+**Commands.**
+
+| Purpose | Command |
+|---|---|
+| Migrations (Railway pre-deploy step) | `npm run db:migrate` |
+| Start | `npm run start` (`next start` binds the port Railway provides via `PORT`) |
+| Populate content | click **Refresh sources** in the UI (or `npm run sources:refresh`) — manual only |
+| Preview embedding backfill (0 provider calls, 0 writes) | `npm run ai:embed -- --dry-run --limit 50` |
+| Embedding backfill | `npm run ai:embed -- --limit 50` (one provider call per run, up to 50 items; re-run until it reports no eligible items) |
+
+**Environment variable names** (names only — set values in Railway's variables UI, never in the repo):
+
+- Required: `DATABASE_URL`.
+- Optional: `GITHUB_TOKEN` (raises the GitHub search rate limit; without it GitHub refresh may be rate limited while the other sources still work).
+- Semantic search and embeddings: `OPENAI_API_KEY` and `OPENAI_EMBEDDING_MODEL` (production uses `text-embedding-3-small`). The model has no default and is never inferred.
+- AI enrichment (separate from embeddings, optional): `AI_PROVIDER`, `ANTHROPIC_API_KEY`, `ANTHROPIC_ENRICHMENT_MODEL`, `OPENAI_ENRICHMENT_MODEL`.
+- `AI_EGRESS_DISABLED`: when set to exactly `1`, every OpenAI/Anthropic call path behaves as "no provider configured" even with valid keys. It must **not** be `1` on the production service if Semantic search or `ai:embed` should work; it is meant for local QA (`npm run dev:no-ai`).
+
+**Refresh vs. embeddings.** Refreshing sources only ingests `feed_items` and updates `source_health`; it never generates embeddings. After new items arrive, Semantic search cannot find them until `npm run ai:embed` has run for them (Keyword search works immediately). The command is idempotent — it skips items whose embedding is already current for the configured model. `ai:embed` runs under `tsx`, a devDependency, so wherever you run it must have the repo's dev dependencies and the production `DATABASE_URL`/`OPENAI_*` variables available.
+
+**Secret handling.** Never commit `.env.local` or any real key, token or connection string; `.env.example` holds placeholders only. Keep production values in Railway's variables. Do not paste `DATABASE_URL` or API keys into logs, issues, chat, docs or commit messages. Dry-runs (`--dry-run`) are the safe way to inspect embedding state.
+
+**Observed in production** (operator-verified, not repository-tested): migrations run successfully at deploy and the server becomes ready; all 10 configured sources refresh and populate Source Health; Home, Queue/bookmark persistence across browser refresh, article detail, Topics, Briefing and Keyword search work; Semantic search works after a manual embedding backfill with `text-embedding-3-small`; follow-up `ai:embed` dry-runs (including after a later refresh) reported current embeddings with 0 provider calls and 0 writes; Home also loads in a fresh private browser session.
+
+**Smoke-test checklist** after a deploy:
+
+1. `/`, `/queue`, `/topics`, `/briefing` return 200 and render.
+2. Sidebar Source Health shows all 10 sources after a manual refresh (not "Never refreshed").
+3. Keyword search returns results.
+4. Bookmark and queue an item, reload the page, confirm both persist.
+5. Open an article detail page and a topic detail page.
+6. `npm run ai:embed -- --dry-run --limit 50` reports the configured provider and no unexpected candidates; Semantic search returns results for a known query.
+
+**Intentional v1 limitations.**
+
+- Source refresh is manual; there is no automatic scheduler.
+- Embeddings are not generated automatically; run the backfill after refreshes that add items.
+- AI enrichment is optional and independent of embeddings.
+- The experimental AI briefing synthesis is evaluation-only and not part of production `/briefing`, which is deterministic.
+- Semantic search is plain pgvector similarity search over stored embeddings (Keyword remains the default); there is no LangChain or agentic RAG layer.
+- One hard-coded mock Discussions item (`src/data/mockFeed.ts`) is included by design because no live Discussions source exists.
+- Single-user; no authentication.
+
 ## Tests
 
 ```bash
