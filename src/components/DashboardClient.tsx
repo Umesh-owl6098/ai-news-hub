@@ -581,8 +581,13 @@ export function DashboardClient({
 
   return (
     <div className="flex min-h-screen w-full bg-slate-50">
+      {/* Desktop: pinned to the viewport while the page scrolls. `self-start`
+          stops flex's default stretch from making the sidebar as tall as the
+          whole document (which left nothing for `sticky` to move within);
+          `lg:h-screen` bounds it to the viewport so the nav's own
+          overflow-y-auto scrolls internally on short screens. */}
       <Sidebar
-        className="hidden lg:flex"
+        className="hidden lg:sticky lg:top-0 lg:flex lg:h-screen lg:self-start"
         activeNavLabel={sidebarActiveLabel}
         onNavItemClick={handleSidebarNavClick}
         sourceHealth={sourceHealth}
