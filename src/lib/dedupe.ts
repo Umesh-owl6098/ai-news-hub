@@ -21,16 +21,27 @@ function sourcePriority(item: FeedItem): number {
  * Lightweight in-memory dedup for the combined "All" feed only — dedicated
  * per-source tabs (e.g. Hacker News) are never filtered by this. Matches on
  * canonical URL first, then normalized title as a secondary signal. When
- * two items collide, the one from the higher-priority source wins.
+ * two items collide, the one from the higher-priority source wins (ties:
+ * the earlier item in the input).
+ *
+ * Source priority decides only WHICH duplicate survives — it never
+ * reorders the result. Survivors come back in the caller's input order, so
+ * a search ranking (Relevance, Newest) supplied by SQL is left intact. The
+ * previous implementation returned survivors in priority order, which
+ * silently regrouped "All" search results by source.
  */
 export function dedupeFeedItems(items: FeedItem[]): FeedItem[] {
-  const sorted = [...items].sort((a, b) => sourcePriority(a) - sourcePriority(b));
+  // Decide winners by walking the items in priority order (input position
+  // breaks ties, so the outcome is deterministic)...
+  const byPriority = items
+    .map((item, index) => ({ item, index }))
+    .sort((a, b) => sourcePriority(a.item) - sourcePriority(b.item) || a.index - b.index);
 
   const seenUrls = new Set<string>();
   const seenTitles = new Set<string>();
-  const result: FeedItem[] = [];
+  const keptIndexes = new Set<number>();
 
-  for (const item of sorted) {
+  for (const { item, index } of byPriority) {
     const urlKey = canonicalizeUrl(item.url);
     const titleKey = normalizeTitle(item.title);
 
@@ -38,8 +49,9 @@ export function dedupeFeedItems(items: FeedItem[]): FeedItem[] {
 
     seenUrls.add(urlKey);
     seenTitles.add(titleKey);
-    result.push(item);
+    keptIndexes.add(index);
   }
 
-  return result;
+  // ...then emit the winners in the caller's original order.
+  return items.filter((_, index) => keptIndexes.has(index));
 }

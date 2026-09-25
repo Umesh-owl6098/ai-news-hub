@@ -61,6 +61,50 @@ export type SearchSort = (typeof SEARCH_SORTS)[number];
 export const BROWSE_SORTS = ["latest", "top", "discussed"] as const;
 export type BrowseSort = (typeof BROWSE_SORTS)[number];
 
+export type AnySort = SearchSort | BrowseSort;
+
+/**
+ * The one place that decides which sorts are real for a given view, so a
+ * sort control can never offer (and a URL can never select) an ordering
+ * that wouldn't actually change the results.
+ *
+ * Browse mode: only Hacker News carries real engagement metrics (score,
+ * comment count) — arXiv/GitHub/RSS items are ingested with both at 0
+ * (GitHub's meaningful metrics are stars/forks, deliberately not used
+ * here), Discussions is a single hard-coded mock, and All/Bookmarks mix
+ * sources where most items have no metrics, so "Top"/"Most Discussed"
+ * would be a misleading comparison. Everything else is Latest only.
+ *
+ * Search mode: Keyword supports Relevance/Newest (SQL ORDER BY). Semantic
+ * results are ranked by vector similarity and `semanticSearch` takes no
+ * sort at all, so the only honest choice is the single ranking it has.
+ */
+export function getAvailableSorts(tab: FilterValue, searching: boolean, mode: SearchMode): readonly AnySort[] {
+  if (searching) return mode === "semantic" ? ["relevance"] : SEARCH_SORTS;
+  return tab === "Hacker News" ? BROWSE_SORTS : ["latest"];
+}
+
+export function defaultSortFor(searching: boolean): AnySort {
+  return searching ? "relevance" : "latest";
+}
+
+/**
+ * Label for a view whose ranking is fixed (no selector). A requested-
+ * Semantic search that actually ran as Semantic is ranked by vector
+ * similarity; if it fell back to Keyword, it's Keyword relevance. Returns
+ * undefined when the label should just come from the single sort option.
+ */
+export function getFixedSortLabel(searching: boolean, requestedMode: SearchMode, effectiveMode: SearchMode): string | undefined {
+  if (!searching || requestedMode !== "semantic") return undefined;
+  return effectiveMode === "semantic" ? "Similarity" : "Relevance";
+}
+
+/** Returns `sort` if it's valid for this view, otherwise the view's default. */
+export function normalizeSort(sort: string, tab: FilterValue, searching: boolean, mode: SearchMode): AnySort {
+  const available = getAvailableSorts(tab, searching, mode);
+  return (available as readonly string[]).includes(sort) ? (sort as AnySort) : defaultSortFor(searching);
+}
+
 // Comfortably fits any real query while rejecting pathological input —
 // documented per Step 8 §28 rather than left as an arbitrary number.
 export const MAX_QUERY_LENGTH = 300;
@@ -113,17 +157,17 @@ export function parseSearchState(params: RawParams): SearchState {
   const rawSource = firstString(params.source);
   const source = rawSource && SOURCE_ID_PATTERN.test(rawSource) ? rawSource : undefined;
 
-  const searching = q.length > 0 || time !== "any" || Boolean(source);
-  const defaultSort: SearchSort | BrowseSort = searching ? "relevance" : "latest";
-  const validSorts: readonly string[] = searching ? SEARCH_SORTS : BROWSE_SORTS;
-  const rawSort = firstString(params.sort) ?? defaultSort;
-  const sort = (validSorts.includes(rawSort) ? rawSort : defaultSort) as SearchSort | BrowseSort;
-
   const rawPage = Number.parseInt(firstString(params.page) ?? "1", 10);
   const page = Number.isFinite(rawPage) && rawPage >= 1 && rawPage <= MAX_PAGE ? rawPage : 1;
 
   const rawMode = firstString(params.mode) ?? "keyword";
   const mode = (SEARCH_MODES as readonly string[]).includes(rawMode) ? (rawMode as SearchMode) : "keyword";
+
+  // `page` counts toward "searching" (see isSearchActive), and the valid
+  // sorts depend on tab and mode too — so sort is resolved last, from the
+  // already-validated values above.
+  const searching = q.length > 0 || time !== "any" || Boolean(source) || page > 1;
+  const sort = normalizeSort(firstString(params.sort) ?? "", tab, searching, mode);
 
   return { tab, q, time, source, sort, page, mode };
 }
@@ -138,12 +182,8 @@ export function parseSearchState(params: RawParams): SearchState {
  */
 export function applySearchStateUpdate(current: SearchState, partial: Partial<SearchState>): SearchState {
   const merged: SearchState = { ...current, page: 1, ...partial };
-  const searching = isSearchActive(merged);
-  const validSorts: readonly string[] = searching ? SEARCH_SORTS : BROWSE_SORTS;
-
-  if (validSorts.includes(merged.sort)) return merged;
-
-  return { ...merged, sort: searching ? "relevance" : "latest" };
+  const sort = normalizeSort(merged.sort, merged.tab, isSearchActive(merged), merged.mode);
+  return sort === merged.sort ? merged : { ...merged, sort };
 }
 
 /**
@@ -158,8 +198,7 @@ export function buildSearchQueryString(state: SearchState): string {
   if (state.source) params.set("source", state.source);
 
   const searching = isSearchActive(state);
-  const defaultSort = searching ? "relevance" : "latest";
-  if (state.sort !== defaultSort) params.set("sort", state.sort);
+  if (state.sort !== defaultSortFor(searching)) params.set("sort", state.sort);
 
   if (state.page > 1) params.set("page", String(state.page));
   if (state.mode !== "keyword") params.set("mode", state.mode);

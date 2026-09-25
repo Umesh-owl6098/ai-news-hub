@@ -18,6 +18,8 @@ import type { SourceHealthSummary } from "@/db/repository";
 import {
   applySearchStateUpdate,
   buildSearchQueryString,
+  getAvailableSorts,
+  getFixedSortLabel,
   isSearchActive,
   type SearchState,
   type SearchMode,
@@ -242,6 +244,8 @@ export function DashboardClient({
   const filter = searchState.tab;
   const sort = searchState.sort;
   const searching = isSearchActive(searchState);
+  const sortOptions = getAvailableSorts(filter, searching, searchState.mode);
+  const fixedSortLabel = getFixedSortLabel(searching, searchState.mode, searchEffectiveMode);
 
   const navigate = useCallback(
     (partial: Partial<SearchState>) => {
@@ -651,7 +655,8 @@ export function DashboardClient({
               onChange={handleTabChange}
               sort={sort}
               onSortChange={(nextSort) => navigate({ sort: nextSort })}
-              searching={searching}
+              sortOptions={sortOptions}
+              fixedSortLabel={fixedSortLabel}
               publisherOptions={filter === "News" ? publisherOptions : []}
               selectedSource={searchState.source}
               onSourceChange={(source) => navigate({ source })}

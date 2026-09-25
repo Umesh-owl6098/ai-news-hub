@@ -161,6 +161,31 @@ describeIfDb("searchFeedItems (real PostgreSQL)", () => {
         title: "Publisher Pagination Fixture Three",
         publishedAt: "2026-09-10T01:00:00.000Z",
       }),
+      // Ordering fixtures: a unique token ("zebracorn") that no real row can
+      // contain, so an unscoped (All) query returns exactly these three.
+      // Newest-first (hn, news, paper), best-match-first (paper, hn, news)
+      // and the old dedup's source-priority order (news, paper, hn) are all
+      // three different orders, so a regression can't pass by coincidence.
+      testItem("searchtest:order:hn", {
+        sourceType: "hackernews",
+        title: "Zebracorn Discussion Thread",
+        description: "Hacker News thread.",
+        publishedAt: "2026-09-10T05:00:00.000Z",
+      }),
+      testItem("searchtest:order:news", {
+        sourceType: "news",
+        sourceId: "searchtest-order",
+        sourceName: "Searchtestia Ordering",
+        title: "Announcement Of Something",
+        description: "A publisher post that mentions zebracorn once.",
+        publishedAt: "2026-09-10T04:00:00.000Z",
+      }),
+      testItem("searchtest:order:paper", {
+        sourceType: "paper",
+        title: "Zebracorn Zebracorn Zebracorn Study",
+        description: "Zebracorn abstract.",
+        publishedAt: "2026-09-10T03:00:00.000Z",
+      }),
     ]);
 
     await repo.addBookmark("searchtest:title-match");
@@ -383,5 +408,56 @@ describeIfDb("searchFeedItems (real PostgreSQL)", () => {
       .from((await import("@/db/schema")).feedItems)
       .where(sql`source_key in ('searchtest:dedup:rss', 'searchtest:dedup:hn')`);
     expect(rows).toHaveLength(2);
+  });
+  // --- Ordering survives cross-source dedup ---------------------------------
+  //
+  // Regression: the unscoped (All) search returned SQL-ordered rows, then
+  // dedupeFeedItems re-sorted them by source priority, so "Newest" (and
+  // Relevance) came back grouped news-first instead of in the requested order.
+
+  const ORDER_QUERY = "zebracorn";
+  const orderIds = (items: FeedItem[]) => items.map((i) => i.id).filter((id) => id.startsWith("searchtest:order:"));
+
+  it("All search, Newest: results are strictly descending by publication date across source types", async () => {
+    const { items } = await repo.searchFeedItems({ query: ORDER_QUERY, sort: "newest" });
+    expect(orderIds(items)).toEqual([
+      "searchtest:order:hn", // 05:00
+      "searchtest:order:news", // 04:00
+      "searchtest:order:paper", // 03:00
+    ]);
+    const times = items.map((i) => new Date(i.publishedAt).getTime());
+    expect(times).toEqual([...times].sort((a, b) => b - a));
+  });
+
+  it("All search, Relevance: post-dedup order equals the ranking order SQL returned before dedup", async () => {
+    const { items } = await repo.searchFeedItems({ query: ORDER_QUERY, sort: "relevance" });
+
+    // Same ORDER BY the repository uses, run directly against the table —
+    // i.e. the order before any in-memory dedup step touches it.
+    const expected = await db.getDb()!.execute<{ source_key: string }>(sql`
+      select source_key from feed_items
+      where search_vector @@ websearch_to_tsquery('english', ${ORDER_QUERY})
+      order by ts_rank_cd(search_vector, websearch_to_tsquery('english', ${ORDER_QUERY})) desc,
+               published_at desc, id desc
+    `);
+    const expectedIds = [...expected].map((r) => r.source_key);
+
+    expect(expectedIds).toHaveLength(3);
+    expect(orderIds(items)).toEqual(expectedIds);
+  });
+
+  it("the ordering fixtures are a meaningful test: Newest, Relevance and source-priority are three different orders", async () => {
+    const priorityOrder = ["searchtest:order:news", "searchtest:order:paper", "searchtest:order:hn"];
+    const newest = orderIds((await repo.searchFeedItems({ query: ORDER_QUERY, sort: "newest" })).items);
+    const relevance = orderIds((await repo.searchFeedItems({ query: ORDER_QUERY, sort: "relevance" })).items);
+    expect(newest).not.toEqual(priorityOrder);
+    expect(relevance).not.toEqual(priorityOrder);
+    expect(newest).not.toEqual(relevance);
+  });
+
+  it("dedup still picks the same duplicate winner in All search (publisher over HN) while preserving order", async () => {
+    const { items } = await repo.searchFeedItems({ query: "shared dedup agents", sort: "newest" });
+    const matches = ids(items).filter((id) => id.startsWith("searchtest:dedup:"));
+    expect(matches).toEqual(["searchtest:dedup:rss"]);
   });
 });

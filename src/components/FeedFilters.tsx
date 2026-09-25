@@ -1,6 +1,6 @@
 "use client";
 
-import { BROWSE_SORTS, SEARCH_SORTS, type BrowseSort, type SearchSort } from "@/lib/searchState";
+import type { BrowseSort, SearchSort } from "@/lib/searchState";
 
 const filters = ["All", "News", "Papers", "GitHub", "Hacker News", "Discussions", "Bookmarks"] as const;
 export type FilterValue = (typeof filters)[number];
@@ -23,10 +23,14 @@ interface FeedFiltersProps {
   onChange: (value: FilterValue) => void;
   sort: BrowseSort | SearchSort;
   onSortChange: (value: BrowseSort | SearchSort) => void;
-  /** Sort options depend on mode: Relevance/Newest while searching,
-   * Latest/Top/Most Discussed while just browsing a tab — same control,
-   * not a second one, integrated per Step 8's requirement. */
-  searching: boolean;
+  /** The sorts that actually change results for this view — see
+   * `getAvailableSorts` in searchState.ts (the single source of truth).
+   * Two or more render a selector; a single option can't be a choice, so
+   * it renders as a plain, non-interactive label instead. */
+  sortOptions: readonly (BrowseSort | SearchSort)[];
+  /** Overrides the label shown for a single, fixed ranking (e.g.
+   * "Similarity" for Semantic results). Ignored when a selector renders. */
+  fixedSortLabel?: string;
   /** Step 27: publisher identity within the current source type — e.g. the
    * 7 RSS publishers sharing the "News" source type. Only meaningful (and
    * only passed non-empty) on the News tab, where multiple publishers
@@ -47,12 +51,13 @@ export function FeedFilters({
   onChange,
   sort,
   onSortChange,
-  searching,
+  sortOptions,
+  fixedSortLabel,
   publisherOptions = [],
   selectedSource,
   onSourceChange,
 }: FeedFiltersProps) {
-  const sortOptions = searching ? SEARCH_SORTS : BROWSE_SORTS;
+  const hasSortChoice = sortOptions.length > 1;
 
   return (
     <div className="flex flex-wrap items-center justify-between gap-3">
@@ -96,20 +101,26 @@ export function FeedFilters({
           </label>
         )}
 
-        <label className="flex items-center gap-2 text-sm text-slate-600">
-          <span className="sr-only">Sort by</span>
-          <select
-            value={sort}
-            onChange={(e) => onSortChange(e.target.value as BrowseSort | SearchSort)}
-            className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100"
-          >
-            {sortOptions.map((option) => (
-              <option key={option} value={option}>
-                {SORT_LABELS[option]}
-              </option>
-            ))}
-          </select>
-        </label>
+        {hasSortChoice ? (
+          <label className="flex items-center gap-2 text-sm text-slate-600">
+            <span className="sr-only">Sort by</span>
+            <select
+              value={sort}
+              onChange={(e) => onSortChange(e.target.value as BrowseSort | SearchSort)}
+              className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100"
+            >
+              {sortOptions.map((option) => (
+                <option key={option} value={option}>
+                  {SORT_LABELS[option]}
+                </option>
+              ))}
+            </select>
+          </label>
+        ) : (
+          <p className="text-sm text-slate-600">
+            Sorted by <span className="font-medium text-slate-700">{fixedSortLabel ?? SORT_LABELS[sortOptions[0] ?? sort]}</span>
+          </p>
+        )}
       </div>
     </div>
   );
