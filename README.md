@@ -2,6 +2,22 @@
 
 A personal AI-news aggregation dashboard. Live sources: Hacker News, arXiv, GitHub, and RSS (OpenAI, Hugging Face, Google DeepMind, Google Research, Mistral AI, NVIDIA Developer, Apple Machine Learning Research). See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for how the system fits together.
 
+## Application Screenshots
+
+All screenshots below are from a real local run of the app against a real persisted database — no mockups, no fabricated data.
+
+![AI News Hub Dashboard](docs/screenshots/01-home-feed.png)
+*Home — the combined feed across all live sources, with per-source Source Health in the sidebar and a Bookmarks panel.*
+
+| | |
+|---|---|
+| ![Hacker News](docs/screenshots/02-hacker-news.png) Hacker News, with the Latest/Top/Most Discussed sort control | ![Research papers](docs/screenshots/03-research-papers.png) Papers — recent arXiv submissions |
+| ![GitHub projects](docs/screenshots/04-github-projects.png) GitHub — trending AI repositories | ![Keyword search](docs/screenshots/05-keyword-search.png) Keyword search (PostgreSQL full-text search) with real ranked results |
+| ![Article detail](docs/screenshots/07-article-details.png) Article detail, with related-items recommendations | ![Topics](docs/screenshots/08-topics.png) Topics — subjects aggregated from tags/categories across the stream |
+| ![Daily Briefing](docs/screenshots/09-daily-briefing.png) Daily Briefing — a deterministic reconstruction for a given date, grouped into Top Stories, Research, and more | ![Reading queue](docs/screenshots/10-reading-queue.png) Reading Queue — a real saved item, with read/unread state |
+
+Semantic search exists (pgvector + OpenAI embeddings) but isn't screenshotted here — producing a real result requires a live, billed OpenAI call, which this repo avoids making just to populate a screenshot. See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for how it works.
+
 ## Getting started
 
 ```bash
